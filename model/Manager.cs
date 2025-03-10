@@ -18,10 +18,10 @@ public class Manager : Employee
         }
     }
 
+    public long GetSalesOfTheYear()
+    {
+        return 1000;
 
+    }
 
-    // Method 
-    // public long GetTotalSalesOfTheYear(){
-
-    // }
 }

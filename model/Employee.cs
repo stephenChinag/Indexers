@@ -3,9 +3,9 @@ public class Employee
     // fields
 
     private int _empID;
-    private string _empName;
+    private string? _empName;
 
-    private string _location;
+    private string? _location;
 
     // properties 
     public int EmpId

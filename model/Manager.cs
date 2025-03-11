@@ -1,8 +1,21 @@
+
+
+
+
 public class Manager : Employee
 {
 
-    // field 
 
+
+    //Child Class Constructor
+
+    public Manager(int empId, string empName, string location, string departmentName) : base(empId, empName, location)
+    {
+        _departmentName = departmentName;
+    }
+
+
+    // field 
     private string? _departmentName;
 
     // ProperTy
@@ -12,6 +25,7 @@ public class Manager : Employee
         {
             _departmentName = value;
         }
+
         get
         {
             return _departmentName;
@@ -22,6 +36,17 @@ public class Manager : Employee
     {
         return 1000;
 
+    }
+
+    // method 
+    public string GetFullDepartmentName()
+    {
+        return Department + " at " + base._location;
+    }
+    public override string GetHealthInsuranceAmout()
+    {
+        base.GetHealthInsuranceAmout();
+        return "Health insurance amount is:" + 1000;
     }
 
 }

@@ -4,9 +4,17 @@ public class Employee
 
     private int _empID;
     private string? _empName;
+    protected string? _location;
 
-    private string? _location;
 
+    //Constructor
+
+    public Employee(int empId, string empName, string location)
+    {
+        _empID = empId;
+        _empName = empName;
+        _location = location;
+    }
     // properties 
     public int EmpId
     {
@@ -44,6 +52,9 @@ public class Employee
         }
 
     }
-
+    public virtual string GetHealthInsuranceAmout()
+    {
+        return "Health insurance amount is:" + 500;
+    }
 
 }

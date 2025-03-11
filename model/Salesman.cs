@@ -1,5 +1,12 @@
 public class SalesMan : Employee
 {
+
+    // Child Constructor 
+
+    public SalesMan(int empId, string empName, string location, string region) : base(empId, empName, location)
+    {
+        _region = region;
+    }
     // field 
     private string _region;
 

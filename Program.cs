@@ -25,40 +25,35 @@
 
             //create Object 
 
-            Employee emp1 = new Employee();
-            emp1.EmpId = 101;
-            emp1.EmpName = "Stephen Chinag";
-            emp1.Location = "Nigeria";
+            Employee emp1 = new Employee(101, "Stephen Chinag", "Nigeria");
+
             Console.WriteLine("Object of Parent Class (Employee)");
             Console.WriteLine(emp1.EmpId);
             Console.WriteLine(emp1.EmpName);
             Console.WriteLine(emp1.Location);
             // Create Object Of Manager 
 
-            Manager mgr1 = new Manager();
-            mgr1.EmpId = 101;
-            mgr1.EmpName = "Stephen Chinag";
-            mgr1.Location = "Nigeria";
-            mgr1.Department = "Software Audit";
+            Manager mgr1 = new Manager(102, "YA", ":Nigeria", "ICT");
+
             Console.WriteLine("Object of Parent Class (Employee)");
             Console.WriteLine(mgr1.EmpId);
             Console.WriteLine(mgr1.EmpName);
             Console.WriteLine(mgr1.Location);
             Console.WriteLine(mgr1.Department);
+            Console.WriteLine(mgr1.GetFullDepartmentName());
 
 
             // Sales Man
-            SalesMan sMan1 = new SalesMan();
-            sMan1.EmpId = 101;
-            sMan1.EmpName = "Stephen Chinag";
-            sMan1.Location = "Nigeria";
-            sMan1.Region = "Appapa Audit";
+            SalesMan sMan1 = new SalesMan(103, "dANTE", "USA", "aPPA aUDIT");
+
             Console.WriteLine("Object of Parent Class (Employee)");
             Console.WriteLine(sMan1.EmpId);
             Console.WriteLine(sMan1.EmpName);
             Console.WriteLine(sMan1.Location);
             Console.WriteLine(sMan1.Region);
+            Console.WriteLine(sMan1.GetHealthInsuranceAmout());
 
+            Console.ReadKey();
         }
 
 

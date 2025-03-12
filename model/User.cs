@@ -2,10 +2,14 @@
 
 // Generic Class
 
-public class User<Q>
+public class User<Q1, Q2>
 {
 
-    public Q RegistrationStatus;
+    // GENERIC FIELD
+    public Q1 RegistrationStatus;
+
+    public Q2 age;
+
 
 
 }

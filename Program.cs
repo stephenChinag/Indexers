@@ -58,11 +58,25 @@
 
 
 
-            User<int> user = new User<int>();
+            User<int, int> user = new User<int, int>();
 
             user.RegistrationStatus = 100;
+            user.age = 120;
+
 
             Console.WriteLine(user.RegistrationStatus);
+            Console.WriteLine(user.age);
+
+
+            User<string, int> user1 = new User<string, int>();
+
+            // user1.age = "The string test";
+
+            user1.age = 100;
+            user1.RegistrationStatus = "1293";
+
+            Console.WriteLine(user1.RegistrationStatus);
+            Console.WriteLine(user1.age);
 
 
         }

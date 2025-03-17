@@ -76,6 +76,18 @@
 
             //     Console.WriteLine(user1.RegistrationStatus);
             //     Console.WriteLine(user1.age);
+
+
+            // MarksPrinter print = new MarksPrinter <int>(); 
+
+            GraduateStudent gs = new GraduateStudent{Mark = 85};
+            MarksPrinter <GraduateStudent , PostGraduateStudent> printer = new MarksPrinter<GraduateStudent , PostGraduateStudent>();
+          printer.stu = new GraduateStudent() { Mark  =  80};
+          printer.PrintMarks();
+
+          Console.ReadKey();
+
+            
         }
 
 
